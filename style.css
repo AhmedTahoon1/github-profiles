@@ -1,0 +1,96 @@
+:root{
+    --main-color:#dd983a;
+    --secondary-color:#f4f3f3;
+    --bg-color:#272727;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    width: 100%;
+    margin: 150px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.search{text-align: center;}
+.search input{
+    padding: 15px;
+    width: 40%;
+    font-size: 18px;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    height: 60px;
+}
+.search .search-btn{
+    height: 60px;
+    border: 0;
+    outline: 0;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    margin-left: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content{
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 150px;
+}
+
+.content .avatar{
+    width: 200px;
+}
+.content .avatar img{
+    width: 100%;
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+}
+.content .info{width: 60%;}
+.content .info h3.name{
+    font-size: 30px;
+}
+.content .info .details{
+    display: flex;
+    list-style: none;
+} 
+.content .info .details li{
+    margin: 20px;
+} 
+
+.content .info #repos .repo{
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .info #repos .repo a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s  ease-in-out;
+    font-weight: 700;
+}
+
+.content .info #repos .repo a:hover{
+    color: var(--bg-color);
+}
